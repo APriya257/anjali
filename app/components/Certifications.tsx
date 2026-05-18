@@ -1,11 +1,14 @@
-import { Award } from 'lucide-react';
-import { certs } from '@/lib/data';
+import { Award, GraduationCap } from 'lucide-react';
+import { certs, education } from '@/lib/data';
 import { SectionHeading } from './ui/SectionHeading';
 
 export function Certifications() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-20" id="certifications">
-      <SectionHeading eyebrow="certifications" title="Certifications I’ve earned." />
+      <SectionHeading
+        eyebrow="certifications & education"
+        title="Credentials, formally."
+      />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {certs.map((c) => (
           <div key={c.name} className="card card-hover p-5">
@@ -15,6 +18,17 @@ export function Certifications() {
             <h3 className="mt-3 font-medium text-ink leading-snug">{c.name}</h3>
             <div className="mt-1 font-mono text-xs text-ink-dim">
               {c.issuer} · {c.year}
+            </div>
+          </div>
+        ))}
+        {education.map((e) => (
+          <div key={e.school} className="card card-hover p-5">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-accent-violet/30 bg-accent-violet/5 text-accent-violet">
+              <GraduationCap size={16} />
+            </span>
+            <h3 className="mt-3 font-medium text-ink leading-snug">{e.degree}</h3>
+            <div className="mt-1 font-mono text-xs text-ink-dim">
+              {e.school} · {e.detail}
             </div>
           </div>
         ))}
