@@ -55,7 +55,7 @@ export function Contact() {
             </span>
             <div>
               <div className="text-sm text-ink-dim">linkedin</div>
-              <div className="font-mono text-ink">in/apriya257</div>
+              <div className="font-mono text-ink">in/anjalipara</div>
             </div>
           </div>
           <span className="font-mono text-xs text-accent-green opacity-0 group-hover:opacity-100 transition-opacity">
