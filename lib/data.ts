@@ -1,80 +1,164 @@
 export const profile = {
-  name: 'Anjali',
-  role: 'Business Intelligence / Data Engineer',
+  name: 'Anjali Para',
+  role: 'Data Engineer · AWS Solutions Architect',
   tagline:
-    'I design data pipelines and BI products that turn messy sources into decisions people can trust.',
+    'I design AWS-native data pipelines and BI products that turn messy, multi-source data into reliable, decision-ready datasets — increasingly with GenAI in the loop.',
   location: 'Seattle, WA',
-  email: 'hello@anjali.dev',
+  email: 'anjalipara0909@gmail.com',
+  phone: '832-525-6711',
   resume: 'resume.pdf',
   socials: {
     github: 'https://github.com/apriya257',
-    linkedin: 'https://www.linkedin.com/in/anjali',
-    email: 'mailto:hello@anjali.dev',
+    linkedin: 'https://www.linkedin.com/in/anjalipara',
+    email: 'mailto:anjalipara0909@gmail.com',
   },
-  now: 'Exploring Iceberg + Trino on EKS and DuckDB-at-the-edge for sub-second analytics.',
+  now: 'Building GenAI-powered data extraction pipelines on AWS — Claude + Glue + Redshift for unstructured healthcare data at scale.',
 };
 
 export const about = [
-  "I'm a BI / Data Engineer with a soft spot for the moment a stakeholder stops emailing for numbers because the dashboard already answers them.",
-  'I build end-to-end pipelines — ingestion, modeling, orchestration, BI — with an eye on cost, latency, and the humans on the other side of the chart.',
-  'Comfortable across the modern data stack: Snowflake / BigQuery / Databricks, dbt, Airflow, Kafka + Flink, Spark, and Tableau / Power BI / Looker.',
+  "I'm a Data Engineer with 5 years across AWS data platforms and AI/ML workflows. AWS Certified Solutions Architect — Professional, AWS Certified AI Practitioner.",
+  'My specialty is consolidating fragmented, multi-source data into reliable analytics-ready datasets — and lately, weaving Claude and other GenAI tools into pipelines to extract structure from messy PDFs, forms, and free text.',
+  'I work end-to-end: ingestion (S3, Glue, Lambda, Kafka, Kinesis) → modeling (Redshift, DynamoDB, Athena) → BI (QuickSight, Tableau) → reliability (CloudWatch, IAM, automated validation).',
 ];
 
 export type SkillGroup = { label: string; items: string[] };
 
 export const skills: SkillGroup[] = [
-  { label: 'Languages', items: ['SQL', 'Python', 'Scala', 'Bash'] },
-  { label: 'Warehouse / Lakehouse', items: ['Snowflake', 'BigQuery', 'Redshift', 'Databricks', 'Iceberg'] },
-  { label: 'Orchestration', items: ['Airflow', 'Dagster', 'Prefect'] },
-  { label: 'Transform', items: ['dbt', 'Spark', 'Pandas'] },
-  { label: 'Streaming', items: ['Kafka', 'Kinesis', 'Flink'] },
-  { label: 'BI', items: ['Tableau', 'Power BI', 'Looker', 'Superset', 'QuickSight'] },
-  { label: 'Cloud', items: ['AWS', 'GCP', 'Azure'] },
-  { label: 'IaC / DevOps', items: ['Terraform', 'Docker', 'GitHub Actions', 'Kubernetes'] },
-  { label: 'Data Quality', items: ['Great Expectations', 'Soda', 'dbt tests'] },
+  {
+    label: 'AI & Machine Learning',
+    items: [
+      'Generative AI (Claude)',
+      'Prompt engineering',
+      'LLM data extraction',
+      'Amazon SageMaker',
+      'Amazon Comprehend',
+      'Amazon Lex',
+      'Predictive modeling',
+      'NLP workflows',
+      'Anomaly detection',
+    ],
+  },
+  {
+    label: 'Programming & Querying',
+    items: ['Python', 'Pandas', 'NumPy', 'SQL (advanced)', 'Shell scripting'],
+  },
+  {
+    label: 'AWS Cloud & Data',
+    items: [
+      'S3',
+      'Glue',
+      'Lambda',
+      'EMR',
+      'Redshift',
+      'Athena',
+      'DynamoDB',
+      'SageMaker',
+      'QuickSight',
+      'CloudWatch',
+      'SNS',
+      'IAM',
+      'Glue Catalog',
+      'Data Lakes',
+    ],
+  },
+  {
+    label: 'Data Engineering',
+    items: [
+      'ETL / ELT design',
+      'Apache Spark',
+      'Apache Kafka',
+      'Real-time & batch',
+      'Dimensional modeling',
+      'Partitioning & indexing',
+      'Data warehousing',
+      'Lakehouse architecture',
+    ],
+  },
+  {
+    label: 'BI & Visualization',
+    items: [
+      'Amazon QuickSight',
+      'Tableau',
+      'Executive dashboards',
+      'Self-service analytics',
+    ],
+  },
+  {
+    label: 'Data Quality & Governance',
+    items: [
+      'Automated validation',
+      'Anomaly frameworks',
+      'Healthcare compliance',
+      'IAM & encryption',
+      'Secure data handling',
+    ],
+  },
 ];
 
 export type Experience = {
   company: string;
   role: string;
   period: string;
+  location?: string;
   bullets: string[];
   stack: string[];
 };
 
 export const experience: Experience[] = [
   {
-    company: 'Northwind Retail',
-    role: 'Senior BI / Data Engineer',
-    period: '2023 — Present',
+    company: 'KGate Technologies (Client: ABA Centers)',
+    role: 'Data Engineer II',
+    period: 'Oct 2025 — Present',
+    location: 'Seattle, WA',
     bullets: [
-      'Cut nightly ETL runtime from 6h → 35m by re-modeling 40+ dbt models with incremental + clustered Snowflake tables.',
-      'Saved ~$480k/yr in Snowflake credits by right-sizing warehouses, killing runaway queries, and migrating heavy joins to Iceberg + Trino.',
-      'Owned the self-serve metrics layer powering 1.2k internal users across Finance, Ops, and Marketing.',
+      'Architected an end-to-end AWS pipeline (S3, Glue, Lambda) that ingests and normalizes 50K+ healthcare billing invoices, with Claude + GenAI converting unstructured PDFs into analytics-ready records.',
+      'Designed prompt-based extraction workflows with Claude — increased throughput ~10x and cut per-batch processing from days to hours.',
+      'Built automated validation and reconciliation logic — achieved 95%+ field-level extraction accuracy and reduced downstream data-quality incidents ~60%.',
+      'Modeled extracted billing data into a dimensional schema in Amazon Redshift — improved downstream query performance by 45% for finance and ops analytics teams.',
+      'Delivered financial insights through Amazon QuickSight dashboards across 20+ payer relationships, surfacing discrepancies that informed contract negotiations.',
+      'Established a self-sustaining onboarding mechanism for new invoice formats — reduced recurring engineering support ~70% post-handoff.',
     ],
-    stack: ['Snowflake', 'dbt', 'Airflow', 'Tableau', 'Iceberg', 'Trino'],
+    stack: ['AWS', 'S3', 'Glue', 'Lambda', 'Redshift', 'QuickSight', 'Claude', 'Python'],
   },
   {
-    company: 'Helio Health',
+    company: 'Populus Group (Client: Amazon)',
+    role: 'Data Analyst III',
+    period: 'May 2024 — Oct 2025',
+    location: 'Seattle, WA',
+    bullets: [
+      'Built an internal data validation service combining Amazon Lex chatbots with AWS data infrastructure, letting business users reconcile reporting across multiple data lakes conversationally.',
+      'Designed AWS Glue and Data Pipeline workflows merging structured + semi-structured data into a unified S3 validation layer with embedded quality checks.',
+      'Leveraged SageMaker and Comprehend to classify data-quality issues, detect anomalies, and prioritize records for review — automating validation tasks previously handled manually.',
+      'Built QuickSight dashboards on Redshift and Athena — reduced manual data query time ~30% and strengthened leadership confidence in primary reporting.',
+    ],
+    stack: ['AWS', 'Glue', 'S3', 'Lex', 'SageMaker', 'Comprehend', 'Redshift', 'Athena', 'QuickSight'],
+  },
+  {
+    company: 'Tata Consultancy Services (TCS)',
     role: 'Data Engineer',
-    period: '2020 — 2023',
+    period: 'Nov 2019 — Jul 2022',
+    location: 'Chennai, India',
     bullets: [
-      'Built a HIPAA-aligned ingestion framework consolidating 18 clinical sources into a unified BigQuery warehouse.',
-      'Reduced data-quality incidents 70% by adding Great Expectations checks and Slack alerting into every Airflow DAG.',
-      'Shipped a Looker explore that became the single source of truth for clinical-outcome reporting across 4 hospital networks.',
+      'Engineered end-to-end AWS pipelines (S3, EMR, Glue, Lambda) integrated with Kafka and Spark for real-time ingestion — processed 100M+ events / day and cut end-to-end latency by 35%.',
+      'Optimized data retrieval in Redshift and DynamoDB through indexing, partitioning, and query tuning — 40% faster execution and better availability for downstream BI.',
+      'Led migration of legacy ETL to Glue + Athena + Lambda — 22% efficiency gain and 15% operational cost reduction.',
+      'Built CloudWatch + SNS real-time monitoring to proactively catch and resolve pipeline failures — 25% downtime reduction.',
+      'Streamlined data discovery and governance via AWS Data Lakes and Glue Catalog with IAM + encryption controls.',
     ],
-    stack: ['BigQuery', 'Airflow', 'dbt', 'Looker', 'GCP', 'Great Expectations'],
+    stack: ['AWS', 'EMR', 'Glue', 'Lambda', 'Kafka', 'Spark', 'Redshift', 'DynamoDB', 'Athena'],
   },
   {
-    company: 'Brightline Analytics',
-    role: 'BI Developer',
-    period: '2018 — 2020',
+    company: 'Brain O Vision',
+    role: 'Data Analyst',
+    period: 'Aug 2018 — Oct 2019',
+    location: 'Hyderabad, India',
     bullets: [
-      'Rebuilt 30+ legacy SSRS reports as Power BI dashboards with row-level security and incremental refresh.',
-      'Authored the team\'s SQL style guide; mentored 4 junior analysts into independent dashboard owners.',
-      'Automated weekly executive reporting with Python + Power Automate, replacing a 6-hour manual process.',
+      'Built interactive Tableau dashboards surfacing operational and clinical metrics for healthcare teams — replaced manual reporting and shortened turnaround on recurring reviews.',
+      'Automated data collection and validation with AWS Lambda + DynamoDB — ~20% reduction in manual effort and better consistency across healthcare datasets.',
+      'Built ETL workflows with AWS S3, Lambda, and Python to automate ingestion from diverse healthcare sources.',
+      'Partnered with analysts, engineers, and ops teams to implement data-quality checks aligned with healthcare regulatory standards.',
     ],
-    stack: ['SQL Server', 'Power BI', 'Python', 'SSIS', 'DAX'],
+    stack: ['Tableau', 'AWS', 'Lambda', 'DynamoDB', 'S3', 'Python'],
   },
 ];
 
@@ -95,18 +179,18 @@ export const projects: Project[] = [
     title: 'COVID-19 Global Surveillance Dashboard',
     pitch:
       'Daily-refreshed worldwide case / death / vaccination tracker with country and US-county drill-downs.',
-    tags: ['Airflow', 'Python', 'Snowflake', 'dbt', 'Tableau', 'S3'],
+    tags: ['AWS Glue', 'Lambda', 'S3', 'Redshift', 'QuickSight', 'Python'],
     impact: [
-      'Refreshed 200+ country feeds nightly across 4 public-health sources.',
-      'Cut end-to-end refresh window from 4h → 25m via incremental dbt models.',
-      'Geo heatmap + 7-day rolling avg + vaccine coverage panels.',
+      'Refreshed 200+ country feeds nightly across 4 public-health sources (JHU, WHO, OWID, CDC).',
+      'Cut end-to-end refresh from 4h → 25m via incremental Glue jobs + partitioned Redshift loads.',
+      'Geo heatmap, 7-day rolling avg, and vaccine-coverage panels in QuickSight.',
     ],
     diagram: `flowchart LR
-  A[JHU CSSE / WHO / OWID / CDC] --> B(Airflow daily ingest)
+  A[JHU / WHO / OWID / CDC] --> B(Lambda fetch)
   B --> C[(S3 raw)]
-  C --> D[dbt staging]
-  D --> E[(Snowflake marts)]
-  E --> F[Tableau / Power BI]`,
+  C --> D[Glue ETL]
+  D --> E[(Redshift marts)]
+  E --> F[QuickSight]`,
     links: [
       { label: 'GitHub', href: '#' },
       { label: 'Live dashboard', href: '#' },
@@ -118,18 +202,18 @@ export const projects: Project[] = [
     title: 'Hantavirus Outbreak Tracking Dashboard',
     pitch:
       'Geospatial surveillance of HPS cases across the Americas, joined with rodent habitat and climate signals.',
-    tags: ['Python', 'BigQuery', 'dbt', 'Looker Studio', 'GeoPandas', 'Cloud Functions'],
+    tags: ['AWS Glue', 'Athena', 'S3', 'QuickSight', 'GeoPandas', 'Lambda'],
     impact: [
-      'Unified 6 disparate public-health sources into one dimensional model.',
-      'Flagged 3 regional case-count anomalies via statistical alerting.',
-      'Choropleth + time-series + climate-correlation panels.',
+      'Unified 6 disparate public-health sources (CDC, PAHO, NOAA, USGS) into one dimensional model in S3 + Athena.',
+      'Flagged 3 regional case-count anomalies via SageMaker-based statistical alerting.',
+      'Choropleth, time-series, and climate-correlation panels in QuickSight.',
     ],
     diagram: `flowchart LR
-  A[CDC HPS / PAHO / NOAA / USGS] --> B(Python ingest)
-  B --> C[(BigQuery staging)]
-  C --> D[dbt transforms]
-  D --> E[GeoPandas enrich]
-  E --> F[Looker Studio]`,
+  A[CDC / PAHO / NOAA / USGS] --> B(Lambda ingest)
+  B --> C[(S3 staging)]
+  C --> D[Glue + GeoPandas]
+  D --> E[Athena]
+  E --> F[QuickSight]`,
     links: [
       { label: 'GitHub', href: '#' },
       { label: 'Live dashboard', href: '#' },
@@ -141,17 +225,17 @@ export const projects: Project[] = [
     title: 'Flight Path & Delay Status Tracker',
     pitch:
       'Near-real-time global flight tracker showing live positions, delay propagation, and on-time performance.',
-    tags: ['Kafka', 'Flink', 'Snowflake', 'Redis', 'Mapbox', 'Python', 'Terraform'],
+    tags: ['Kinesis', 'Lambda', 'DynamoDB', 'Redshift', 'Mapbox', 'Python'],
     impact: [
-      'Ingested ~30k flight events / minute with <5s end-to-end latency.',
-      'Surfaced delay-cascade insights across 400+ airports.',
-      'Live map + carrier scorecards + airport congestion view.',
+      'Ingested ~30k flight events / minute via Kinesis with <5s end-to-end latency.',
+      'Surfaced delay-cascade insights across 400+ airports using stateful Lambda aggregations.',
+      'DynamoDB for hot lookups, Redshift for historical analytics, Mapbox for the live map.',
     ],
     diagram: `flowchart LR
-  A[OpenSky API] --> B(Kafka: flights.positions)
-  B --> C[Flink stateful agg]
-  C --> D[(Snowflake)]
-  C --> E[(Redis hot lookups)]
+  A[OpenSky API] --> B(Kinesis: flights)
+  B --> C[Lambda agg]
+  C --> D[(DynamoDB hot)]
+  C --> E[(Redshift)]
   D --> F[Next.js + Mapbox]
   E --> F`,
     links: [
@@ -161,49 +245,50 @@ export const projects: Project[] = [
     accent: 'violet',
   },
   {
-    slug: 'nyc-taxi-lakehouse',
-    title: 'NYC Taxi Trip Lakehouse',
+    slug: 'genai-invoice-extractor',
+    title: 'GenAI Invoice Extraction Sandbox',
     pitch:
-      'Multi-TB historical trip data on Iceberg + S3 with Spark batch jobs and Trino ad-hoc analytics.',
-    tags: ['Spark', 'Iceberg', 'Trino', 'S3', 'Superset', 'Airflow'],
+      'Open-source side project showing how Claude + AWS turns messy multi-vendor PDFs into structured rows — the same pattern I scaled at ABA Centers.',
+    tags: ['Claude', 'Lambda', 'S3', 'Glue', 'Redshift', 'Python'],
     impact: [
-      'Processed 10+ years of trip data (~1.5B rows, ~3 TB) on Iceberg.',
-      'Trino p95 query latency under 4s for typical analyst questions.',
-      'Surge-pricing and fare-anomaly dashboards in Superset.',
+      'Prompt-based extraction with self-check pass achieving 95%+ field-level accuracy on a public invoice corpus.',
+      'Low-confidence rows auto-routed to a review queue rather than silently failing.',
+      'Schema-driven prompt templates so new invoice formats onboard in minutes, not days.',
     ],
     diagram: `flowchart LR
-  A[NYC TLC public data] --> B(Airflow batch ingest)
-  B --> C[(S3 raw)]
-  C --> D[Spark transform]
-  D --> E[(Iceberg tables)]
-  E --> F[Trino]
-  F --> G[Superset]`,
+  A[Invoice PDFs] --> B[(S3 raw)]
+  B --> C[Lambda + Claude]
+  C --> D{confidence?}
+  D -- high --> E[Glue normalize]
+  D -- low --> F[Review queue]
+  E --> G[(Redshift)]`,
     links: [
       { label: 'GitHub', href: '#' },
-      { label: 'Case study', href: '#case-study' },
+      { label: 'Write-up', href: '#' },
     ],
     accent: 'amber',
   },
   {
-    slug: 'crypto-streaming',
-    title: 'Real-time Crypto Market Streaming Pipeline',
+    slug: 'nyc-taxi-lakehouse',
+    title: 'NYC Taxi Trip Lakehouse on AWS',
     pitch:
-      'WebSocket feeds → Kafka → Flink (VWAP, volume spikes) → Snowflake + Grafana live monitoring.',
-    tags: ['Kafka', 'Flink', 'Snowflake', 'Grafana', 'Python'],
+      'Multi-TB historical trip data on S3 + Glue Catalog, queryable via Athena and EMR Spark.',
+    tags: ['EMR', 'Spark', 'Glue Catalog', 'S3', 'Athena', 'QuickSight'],
     impact: [
-      'Sub-second VWAP and volume-spike detection across 50+ trading pairs.',
-      'Auto-recovery on exchange disconnects with exactly-once Kafka semantics.',
-      'Grafana live boards + Snowflake historical analytics.',
+      'Processed 10+ years of trip data (~1.5B rows, ~3 TB) partitioned by year/month.',
+      'Athena p95 query latency under 4s for typical analyst questions.',
+      'Surge-pricing and fare-anomaly dashboards in QuickSight.',
     ],
     diagram: `flowchart LR
-  A[Coinbase / Binance WS] --> B(Python producer)
-  B --> C[Kafka: trades]
-  C --> D[Flink: VWAP / spike]
-  D --> E[(Snowflake)]
-  D --> F[Grafana live]`,
+  A[NYC TLC public data] --> B(Lambda ingest)
+  B --> C[(S3 raw)]
+  C --> D[EMR Spark transform]
+  D --> E[(S3 curated + Glue Catalog)]
+  E --> F[Athena]
+  F --> G[QuickSight]`,
     links: [
       { label: 'GitHub', href: '#' },
-      { label: 'Live dashboard', href: '#' },
+      { label: 'Case study', href: '#case-study' },
     ],
     accent: 'pink',
   },
@@ -212,18 +297,18 @@ export const projects: Project[] = [
     title: 'Wildfire & Air Quality Geospatial Dashboard',
     pitch:
       'NASA FIRMS fire detections joined with OpenAQ air quality and NOAA weather into a daily risk map.',
-    tags: ['Airflow', 'BigQuery', 'dbt', 'GeoPandas', 'Looker Studio'],
+    tags: ['Glue', 'Athena', 'Lambda', 'GeoPandas', 'QuickSight'],
     impact: [
       'Joined 3 satellite + sensor + weather sources into a single risk model.',
       'Daily refresh with H3 hex-grid aggregation for fast geospatial joins.',
-      'Trend dashboard + active-fire alerting layer.',
+      'Trend dashboard + active-fire SNS alerting layer.',
     ],
     diagram: `flowchart LR
-  A[NASA FIRMS / OpenAQ / NOAA] --> B(Airflow)
-  B --> C[(BigQuery staging)]
-  C --> D[dbt + H3 hex grid]
-  D --> E[GeoPandas risk model]
-  E --> F[Looker Studio]`,
+  A[NASA FIRMS / OpenAQ / NOAA] --> B(Lambda)
+  B --> C[(S3 staging)]
+  C --> D[Glue + H3 hex grid]
+  D --> E[Athena]
+  E --> F[QuickSight]`,
     links: [
       { label: 'GitHub', href: '#' },
       { label: 'Live dashboard', href: '#' },
@@ -234,59 +319,65 @@ export const projects: Project[] = [
 
 export const caseStudy = {
   projectSlug: 'nyc-taxi-lakehouse',
-  title: 'Building a lakehouse for 1.5B taxi trips on a startup budget',
+  title: 'Building an AWS lakehouse for 1.5B taxi trips on a tight budget',
   problem:
-    'Analysts needed ad-hoc access to a decade of NYC taxi trips, but loading it all into Snowflake would have cost 5x our monthly bill.',
+    'Analysts wanted ad-hoc access to a decade of NYC taxi trips, but loading everything into Redshift would have blown the monthly bill.',
   decisions: [
     'Land raw Parquet in S3, never duplicate into the warehouse.',
-    'Use Apache Iceberg as the open table format — schema evolution + time travel without vendor lock-in.',
-    'Spark on EMR for batch transforms (cheap, spot-friendly); Trino for interactive SQL.',
-    'Expose the same Iceberg tables to Snowflake via external tables so existing BI keeps working.',
+    'Register everything in the Glue Catalog so Athena, EMR, and Redshift Spectrum all see the same tables.',
+    'EMR Spark on spot instances for batch transforms — cheap and easy to scale.',
+    'Expose curated S3 tables to BI via Athena; reserve Redshift for the truly hot marts.',
   ],
   results: [
-    '~70% lower storage + compute cost vs. all-Snowflake baseline.',
-    'p95 Trino query latency under 4 seconds for typical analyst questions.',
-    'Time-travel queries unlocked back-fills that previously meant full reloads.',
+    '~70% lower storage + compute cost vs. an all-Redshift baseline.',
+    'p95 Athena query latency under 4 seconds for typical analyst questions.',
+    'Partition pruning + columnar Parquet kept scan costs predictable as the dataset grew.',
   ],
 };
 
 export const dashboards = [
   {
-    title: 'Executive KPI overview',
-    note: 'Weekly revenue, retention, and CAC at a glance — Tableau.',
+    title: 'Payer & invoice insights',
+    note: 'QuickSight board across 20+ payer relationships — revenue, reimbursement variance, denials.',
   },
   {
-    title: 'Pipeline SLO board',
-    note: 'Freshness + run-duration + failure-rate per DAG — Superset.',
+    title: 'Pipeline health',
+    note: 'CloudWatch + custom widgets — DAG freshness, failure rate, alarm history.',
   },
   {
     title: 'Cost & usage explorer',
-    note: 'Snowflake credit burn by warehouse, query, and team — Power BI.',
+    note: 'Redshift / Glue / Athena spend by team, query, and warehouse — QuickSight.',
   },
   {
     title: 'Geospatial outbreak map',
-    note: 'Choropleth with time-slider — Looker Studio.',
+    note: 'Choropleth with time-slider — QuickSight ML insights enabled.',
   },
 ];
 
 export type Cert = { title: string; issuer: string; year: string };
 
 export const certifications: Cert[] = [
-  { title: 'AWS Certified Data Engineer — Associate', issuer: 'Amazon Web Services', year: '2024' },
-  { title: 'SnowPro Core', issuer: 'Snowflake', year: '2023' },
-  { title: 'dbt Analytics Engineering', issuer: 'dbt Labs', year: '2023' },
-  { title: 'Professional Data Engineer', issuer: 'Google Cloud', year: '2022' },
+  { title: 'AWS Certified Solutions Architect — Professional', issuer: 'Amazon Web Services', year: '2024' },
+  { title: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', year: '2024' },
+];
+
+export const education = [
+  {
+    school: 'University of Houston — Clear Lake',
+    degree: 'M.S. Software Engineering',
+    detail: 'Houston, TX · GPA 3.50 · May 2024',
+  },
 ];
 
 export const writing = [
   {
-    title: 'Why we moved half of Snowflake to Iceberg (and what broke)',
-    note: 'A retrospective on a six-month migration and what we wish we knew on day one.',
+    title: 'Using Claude to extract structured data from messy healthcare PDFs',
+    note: 'A walkthrough of the prompting + validation pattern that got us to 95%+ field accuracy at scale.',
     href: '#',
   },
   {
-    title: 'A practical guide to dbt incremental models that actually scale',
-    note: 'Patterns, anti-patterns, and the merge strategy that finally stuck.',
+    title: 'When to reach for Athena vs. Redshift vs. Spark on EMR',
+    note: 'A practical decision tree built from migrating a real workload across all three.',
     href: '#',
   },
 ];

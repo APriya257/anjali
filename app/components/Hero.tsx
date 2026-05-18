@@ -28,6 +28,12 @@ export default function Hero() {
             <a className="hover:text-ink" href={profile.socials.email}>
               {profile.email}
             </a>
+            {profile.phone ? (
+              <>
+                <span className="text-bg-border">·</span>
+                <span>{profile.phone}</span>
+              </>
+            ) : null}
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

@@ -18,7 +18,10 @@ export default function Experience() {
               <h3 className="text-lg font-semibold text-ink">
                 {e.role} <span className="text-ink-dim">· {e.company}</span>
               </h3>
-              <span className="font-mono text-xs text-ink-faint">{e.period}</span>
+              <span className="font-mono text-xs text-ink-faint">
+                {e.period}
+                {e.location ? ` · ${e.location}` : ''}
+              </span>
             </div>
             <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-ink/90 marker:text-accent-cyan">
               {e.bullets.map((b, j) => (
