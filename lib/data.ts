@@ -178,7 +178,7 @@ export const experience: Experience[] = [
   {
     company: 'KGate Technologies (Client: ABA Centers)',
     role: 'Data Engineer II',
-    period: 'Oct 2025 — Present',
+    period: 'May 2026 — Present',
     location: 'Seattle, WA',
     stack: ['AWS', 'S3', 'Glue', 'Lambda', 'Redshift', 'QuickSight', 'Claude', 'Python'],
     bullets: [
@@ -192,8 +192,8 @@ export const experience: Experience[] = [
   },
   {
     company: 'Populus Group (Client: Amazon)',
-    role: 'Data Analyst III',
-    period: 'May 2024 — Oct 2025',
+    role: 'Data Engineer II',
+    period: 'May 2024 — May 2026',
     location: 'Seattle, WA',
     stack: ['AWS', 'Glue', 'S3', 'Lex', 'SageMaker', 'Comprehend', 'Redshift', 'Athena', 'QuickSight'],
     bullets: [
@@ -218,7 +218,7 @@ export const experience: Experience[] = [
     ],
   },
   {
-    company: 'Brain O Vision',
+    company: 'BrainoVision Solutions',
     role: 'Data Analyst',
     period: 'Aug 2018 — Oct 2019',
     location: 'Hyderabad, India',
@@ -427,7 +427,7 @@ export const certs: Cert[] = [
 
 export const education: Education[] = [
   {
-    degree: 'M.S. Software Engineering',
+    degree: 'M.S. Computer Software Engineering',
     school: 'University of Houston — Clear Lake',
     detail: 'Houston, TX · GPA 3.50 · May 2024',
   },
