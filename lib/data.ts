@@ -178,7 +178,7 @@ export const experience: Experience[] = [
   {
     company: 'KGate Technologies (Client: ABA Centers)',
     role: 'Data Engineer II',
-    period: 'Oct 2025 — Present',
+    period: 'May 2026 — Present',
     location: 'Seattle, WA',
     stack: ['AWS', 'S3', 'Glue', 'Lambda', 'Redshift', 'QuickSight', 'Claude', 'Python'],
     bullets: [
@@ -193,7 +193,7 @@ export const experience: Experience[] = [
   {
     company: 'Populus Group (Client: Amazon)',
     role: 'Data Analyst III',
-    period: 'May 2024 — Oct 2025',
+    period: 'May 2024 — May 2026',
     location: 'Seattle, WA',
     stack: ['AWS', 'Glue', 'S3', 'Lex', 'SageMaker', 'Comprehend', 'Redshift', 'Athena', 'QuickSight'],
     bullets: [
